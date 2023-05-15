@@ -43,7 +43,7 @@ body {
     letter-spacing: 3px;
     font-weight: 500;
     font-size: 20px;
-    font-family:'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #cover #cover-text h1 {
@@ -53,13 +53,14 @@ body {
     font-size: 40px;
     font-family: 'Roboto Slab', serif;
 }
+
 #cover #cvr-card {
     padding-top: 120px;
     padding-bottom: 70px;
     height: auto;
 }
 
-.card {
+#cover .card {
     width: 90%;
     background-color: rgba(52, 68, 52, 0.62);
     margin: auto auto;
@@ -71,12 +72,12 @@ body {
     padding: 0.5rem;
 }
 
-.card .card-title {
+#cover .card .card-title {
     color: #edefef;
     font-family: 'Lora', serif;
 }
 
-.card .card-text {
+#cover .card .card-text {
     padding-top: 6px;
     color: #e1e1e1;
 }
@@ -89,7 +90,7 @@ body {
 #block h6 {
     letter-spacing: 3px;
     font-weight: 500;
-    font-family:'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #block h2 {
@@ -110,22 +111,27 @@ body {
     padding-top: 10px;
 }
 
+#details {
+    padding-bottom: 30px;
+    background-color: rgb(245, 245, 245);
+}
+
 #details #heading {
     text-align: center;
-    padding: 0 150px;
+    padding: 50px 150px;
 }
 
 @media only screen and (max-width: 991px) {
     #details #heading {
         text-align: center;
-        padding: 0 50px;
+        padding: 50px 50px;
     }
 }
 
 #details #heading h6 {
     letter-spacing: 3px;
     font-weight: 500;
-    font-family:'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 #details #heading h2 {
@@ -147,9 +153,34 @@ body {
     padding-right: 25px;
 }
 
-#groups p {
-    padding-top: 20px;
-    color: #7e7e7e;
+#groups .card {
+    width: 90%;
+    margin: auto auto;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.12), 2px 3px 4px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    padding: 0.5rem;
+
+}
+
+#groups .card-title {
+    text-align: left;
+    font-family: 'Roboto Slab', serif;
+}
+
+#groups .card .card-text {
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    color: #707072;
+    padding-top: 6px;
+}
+
+#groups .card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 0 20px 30px;
 }
 
 #connect {
@@ -205,7 +236,7 @@ body {
 }
 
 #footer {
-    background: rgba(40,58,68,255);
+    background: rgba(40, 58, 68, 255);
     color: white;
     line-height: 7vh;
     margin-bottom: 0;
@@ -229,7 +260,7 @@ body {
     font-size: 20px;
     border: none;
     outline: none;
-    background-color: rgba(40,58,68,255);
+    background-color: rgba(40, 58, 68, 255);
     color: white;
     cursor: pointer;
     padding: 10px 15px;
@@ -238,7 +269,7 @@ body {
 
 #back-to-top:hover {
     background-color: white;
-    color: rgba(40,58,68,255);
+    color: rgba(40, 58, 68, 255);
 }
 
 .loaded #loader {
